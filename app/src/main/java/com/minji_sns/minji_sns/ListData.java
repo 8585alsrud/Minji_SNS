@@ -1,7 +1,7 @@
 package com.minji_sns.minji_sns;
 
 /**
- * Created by 김민지 on 2016-08-04.
+ * Created by MinjiDGU on 2016-08-04.
  */
 public class ListData {
 
