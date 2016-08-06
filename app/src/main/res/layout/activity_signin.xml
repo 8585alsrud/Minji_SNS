@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainColor"
+    tools:context="com.minji_sns.minji_sns.SigninActivity">
+
+    <RelativeLayout
+        android:layout_above="@+id/ll"
+        android:gravity="center"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/mainimg"
+            android:src="@drawable/dco_b_logo"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/mainimg"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:textSize="30sp"
+            android:text="@string/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_marginRight="1dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="ID"
+                style="@style/SigninText" />
+            <EditText
+                android:id="@+id/edit1"
+                android:layout_weight="1"
+                android:background="@drawable/edit_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="PW"
+                style="@style/SigninText" />
+            <EditText
+                android:id="@+id/edit2"
+                android:layout_weight="1"
+                android:background="@drawable/edit_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="확인"
+                style="@style/SigninText"/>
+            <EditText
+                android:id="@+id/edit3"
+                android:layout_weight="1"
+                android:background="@drawable/edit_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="닉네임"
+                style="@style/SigninText"/>
+            <EditText
+                android:id="@+id/edit4"
+                android:layout_weight="1"
+                android:background="@drawable/edit_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:onClick="btnClickEvent"
+        android:id="@+id/goBtn"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/ll"
+        android:background="@drawable/button_box"
+        android:text="SIGN IN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
